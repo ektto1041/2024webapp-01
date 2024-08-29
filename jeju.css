@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'EF_jejudoldam';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'EF_jejudoldam';
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hd {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 1, 1, 0);
+  transition: background-color .3s, color .3s;
+  z-index: 10;  
+  color: white;
+}
+
+.hd:hover {
+  background-color: white;
+  color: black;
+}
+
+.hd .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 2rem;
+  font-size: 1.3rem;
+}
+
+.logo a {
+  display: block;
+  line-height: 2rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  width: 10rem;
+  height: 4rem;
+}
+
+nav a {
+  display: block;
+  line-height: 4rem;
+  text-align: center;
+}
+
+nav a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: .25rem;
+  background-color: yellow;
+  margin: 0 auto;
+  transform: translateY(-.25rem);
+
+  transition: width .3s;
+}
+
+nav a:hover:after {
+  width: 4rem;
+}
+
+.visual {
+  width: 100%;
+}
+
+.visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide li {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-info {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 300px;
+  color: white;
+}
+
+.slide-info h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.bx-wrapper {
+  border: none !important; 
+  background-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.content {
+  width: 100%;
+  padding: 10rem 1rem;
+}
+
+.content h3 {
+  font-size: 3rem;
+}
+
+.content h3:after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: .25rem;
+  background-color: yellow;
+  margin-top: 1rem;
+  /* margin: 0 auto; */
+}
+
+.content>p {
+  padding-left: 40%;
+  margin-bottom: 4rem;
+}
+
+.card-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.card {
+  width: 384px;
+  height: 525px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 450px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.3);
+
+  transition: box-shadow .3s, transform .3s;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 20px rgba(0,0,0,.3);
+}
+
+.card .title,.description {
+  padding: 0 .5rem;
+}
+
+.card .title {
+  font-size: 1.5rem;
+}
+
+.deco-box {
+  position: relative;
+  width: 100%;  
+  height: 460px;
+}
+
+.deco1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 250px;
+  padding: 50px;
+  background-color: yellow;
+}
+
+.deco1 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.deco2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: 300px;
+}
+
+.deco2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-container {
+  background-color: #eeeeee;
+}
+
+.news-card-box {
+  margin-top: 3rem;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-between;
+  width: 360px;
+  height: 466px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0,0,0,.3);
+
+  transition: box-shadow .3s, transform .3s;
+}
+
+.news-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 20px rgba(0,0,0,.3);
+}
+
+.news-card .title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.news-card .preview {
+  font-size: .75rem;
+  color: gray;
+}
+
+.news-footer {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: .75rem;
+}
+
+.news-card-box .bx-viewport {
+  height: 566px !important;
+  padding-top: 50px;
+}
+
+.footer {
+  height: 300px;
+  background-color: black;
+}
