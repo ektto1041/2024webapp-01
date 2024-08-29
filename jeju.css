@@ -269,4 +269,25 @@ nav a:hover:after {
 .footer {
   height: 300px;
   background-color: black;
+  color: white;
+  padding: 5rem;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.footer p {
+  font-size: .5rem;
+}
+
+.footer ul {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
 }
